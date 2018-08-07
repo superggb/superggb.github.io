@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>README</title>
+      <link href="/2018/08/07/README/"/>
+      <url>/2018/08/07/README/</url>
+      <content type="html"><![CDATA[<h2 id="这里主要是博客的介绍说明："><a href="#这里主要是博客的介绍说明：" class="headerlink" title="这里主要是博客的介绍说明："></a>这里主要是博客的介绍说明：</h2><ol><li>用于存放个人学习笔记和记录（有不同意见可以交流）</li><li>存放一些个人随笔</li><li>存放一些个人收集的网络资源</li><li>提供一个公开交流的平台</li><li>也是作为网络前端的一个测试点，以后可能随时会改变博客样式风格</li></ol>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>HELLO WORLD</title>
+      <link href="/2018/08/07/HELLO%20WORLD/"/>
+      <url>/2018/08/07/HELLO%20WORLD/</url>
+      <content type="html"><![CDATA[<p>相信每一个程序员的第一行代码输出就是helloworld吧， 无论是接触到一门新的编程语言还是搭建好一个新的软件环境。我想无论是哪位程序员，看到这两个单词时都会有种莫名的亲切感吧。</p><p>–</p><p>当我们亲手用一行一行代码去实现一个又一个功能，让我们的生活，让这个世界，变得更加方便和智能，我觉得这也是代码本身向这个世界的一种展示，当我们使用着互联网，智能手机，个人电脑，感受着这个信息时代的便利时，一行一行代码也穿梭其间，可以说，这是一个代码的时代，溯源到其始端，也正是从1972年<em>贝尔实验室</em>在其 <em>Introduction to the Language B</em> 使用hello world,作为程序第一个输出开始，代码开始向这个世界输出自己的力量。</p><p>–</p><p>所以，作为程序猿从某种意义上来说也是伟大的，我们用智慧写出一行行代码来构建这个世界，We are creating the world !</p><p>–</p><p>电影 <em>模仿游戏</em> 里面图灵有这样的说法，<em>“can mechaines think? just because they think diffently from us? ”</em> 当我们用代码构建一层层神经网络，企图让机器去自己思考，让机器去认识这个世界的时候，我们能否认其所输出的hello world不正是它向这个世界问好吗？当计算机在代码驱动下，能认识一朵花，一只猫或者一条狗的时候，这不正是人类婴儿时期，在懵懂中开始对世界产生认知吗？在我看来，机器像人类一样思考或者说能思考得像人类，it’s just a matter of time.</p><p>–</p><p>hello world 也是我搭建好这个博客后自动生成的文章标题，我觉得作为一个程序猿的博客，以hello world开头也是再好不过的了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Printf(&quot;hello world!&quot;)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+    </entry>
+    
+  
+  
+    
+  
+</search>
