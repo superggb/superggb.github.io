@@ -53,7 +53,7 @@
     
     <title>
         
-            归档 | 
+            开启SpringBoot的新世界 | 
         
         GGB&#39;Blog
     </title>
@@ -64,7 +64,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="GGB&#39;Blog from 2018/8/6">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",spring">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -220,7 +220,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="GGB&#39;Blog">
-    <meta name="msapplication-starturl" content="http://yoursite.com/archives/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/13/开启SpringBoot的新世界/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="GGB&#39;Blog">
@@ -235,13 +235,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/archives/">
+    <meta property="og:url" content="http://yoursite.com/2018/08/13/开启SpringBoot的新世界/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | GGB&#39;Blog">
+    <meta property="og:title" content="开启SpringBoot的新世界 | GGB&#39;Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="GGB&#39;Blog from 2018/8/6">
-    
+    <meta property="og:article:tag" content="spring"> 
 
+    
+        <meta property="article:published_time" content="Mon Aug 13 2018 20:48:44 GMT+0800">
+        <meta property="article:modified_time" content="Mon Aug 13 2018 20:50:01 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -249,13 +252,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/08/13/开启SpringBoot的新世界/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/08/13/开启SpringBoot的新世界/index.html",
+    "headline": "开启SpringBoot的新世界",
+    "datePublished": "Mon Aug 13 2018 20:48:44 GMT+0800",
+    "dateModified": "Mon Aug 13 2018 20:50:01 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "GGB",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/timg.jfif"
+        },
+        "description": "To see the beauty of the world"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "GGB&#39;Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",spring",
+    "description": "GGB&#39;Blog from 2018/8/6",
+}
+</script>
 
 
     
@@ -289,274 +322,288 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一-使用Spring-Initializr-快速搭建SpringBoot项目"><span class="post-toc-number">1.</span> <span class="post-toc-text">一.使用Spring Initializr 快速搭建SpringBoot项目</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二-创建第一个RESTful-Web-Service"><span class="post-toc-number">2.</span> <span class="post-toc-text">二.创建第一个RESTful Web Service</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-创建一个名为hello的javabean"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1.创建一个名为hello的javabean</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-创建Controller"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2.创建Controller</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-运行SpringBoot"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">3.运行SpringBoot</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三-总结"><span class="post-toc-number">3.</span> <span class="post-toc-text">三.总结</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 20 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/08/13/开启SpringBoot的新世界/">开启SpringBoot的新世界</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            –之前一直在折腾SSM框架，几番下来也算是对SpringMV...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/08/13/开启SpringBoot的新世界/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/timg.jfif" width="44px" height="44px" alt="GGB's avatar">
-            </div>
-            <div>
-                <strong>GGB</strong>
-                <span>8月 13, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/GGB-学习笔记/">GGB'学习笔记</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="http://i4.bvimg.com/656991/b38a3349640e39bds.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/08/08/Spring-SpringMVC的基本流程/">Spring_______SpringMVC的基本流程</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/08/08/Spring-SpringMVC的基本流程/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/timg.jfif" width="44px" height="44px" alt="GGB's avatar">
-            </div>
-            <div>
-                <strong>GGB</strong>
-                <span>8月 08, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/GGB-学习笔记/">GGB'学习笔记</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/08/07/README/">README</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/08/07/README/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/timg.jfif" width="44px" height="44px" alt="GGB's avatar">
-            </div>
-            <div>
-                <strong>GGB</strong>
-                <span>8月 07, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/08/07/HELLO WORLD/">HELLO WORLD</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            相信每一个程序员的第一行代码输出就是helloworld吧， 无论是...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/08/07/HELLO WORLD/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/timg.jfif" width="44px" height="44px" alt="GGB's avatar">
-            </div>
-            <div>
-                <strong>GGB</strong>
-                <span>8月 07, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/GGB-随笔/">GGB'随笔</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 7; i++) {
-        randomNum = Math.floor(Math.random() * 20 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/cartoon/ct-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/cartoon/ct-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                开启SpringBoot的新世界
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/timg.jfif" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>GGB</strong>
+        <span>8月 13, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/spring/">spring</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/2018/08/13/开启SpringBoot的新世界/" class="leancloud-views_num" data-flag-title="开启SpringBoot的新世界">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=开启SpringBoot的新世界&url=http://yoursite.com/2018/08/13/开启SpringBoot的新世界/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=GGB&#39;Blog&title=开启SpringBoot的新世界&summary=GGB&#39;Blog from 2018/8/6&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/08/13/开启SpringBoot的新世界/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>–<br>之前一直在折腾SSM框架，几番下来也算是对SpringMVC+Spring+Mybatis的基本使用逻辑和思路有了一些清晰的思路。框架的开发模式确实比传统的纯JavaBean和Servlet的开发更高效且结构更加清晰。但是，我也并未打算就此停住来享受SSM框架的便利。因为，在接触Spring框架之初，早已听说了Spring的另一个项目——SpringBoot,这是一个更加简洁高效框架。在阅读 <em>SpringInAction</em> 一书时，作者在最后便提出了SpringBoot,称其是一个改变游戏规则的产品，之所以放在全书最后是为了让读者能更好理解Spring，但是他也说了，或许在下一版的书中，我们将会在全书开篇就看见SpringBoot的身影。这也说明SpringBoot所拥有的无限潜力。</p>
+<p>此篇博客是我第一次接触SpringBoot后的体会和学习总结，其主要内容源自于<a href="https://spring.io/guides/gs/rest-service/" target="_blank" rel="noopener">SpringBoot的官方文档开篇</a>。</p>
+<h2 id="一-使用Spring-Initializr-快速搭建SpringBoot项目"><a href="#一-使用Spring-Initializr-快速搭建SpringBoot项目" class="headerlink" title="一.使用Spring Initializr 快速搭建SpringBoot项目"></a>一.使用Spring Initializr 快速搭建SpringBoot项目</h2><p>在Idea环境下，新建项目，选择Spring Initializr，直接点击next。</p>
+<p><img src="http://i1.bvimg.com/656991/f5f037851b44d267.png" alt="Markdown"></p>
+<p>选择使用Mavean构建项目</p>
+<p><img src="http://i1.bvimg.com/656991/193738ec77236f60.png" alt="Markdown"></p>
+<p>选择Web项目，Idea会自动选择最新的SpringBoot版本，<br><img src="http://i1.bvimg.com/656991/cc9f799297f0abe7.png" alt="Markdown"></p>
+<p>自此，便创建好了一个完整配置的SpringBoot项目，观察其pom.xml文件，可以发现其已经引进相关的SpringBoot的配置。</p>
+<h2 id="二-创建第一个RESTful-Web-Service"><a href="#二-创建第一个RESTful-Web-Service" class="headerlink" title="二.创建第一个RESTful Web Service"></a>二.创建第一个RESTful Web Service</h2><p>此次运行目标是通过一个HTTP GET REQUSET:</p>
+<blockquote>
+<p><a href="http://localhost:8080/greeting" target="_blank" rel="noopener">http://localhost:8080/greeting</a></p>
+</blockquote>
+<p>得到返回的json格式数据：</p>
+<blockquote>
+<p>{“id”:1,”content”:”Hello, World!”}</p>
+</blockquote>
+<p>也可以传递一个名为name的参数改变返回值：</p>
+<blockquote>
+<p><a href="http://localhost:8080/greeting?name=ggb" target="_blank" rel="noopener">http://localhost:8080/greeting?name=ggb</a></p>
+</blockquote>
+<blockquote>
+<p>{“id”:1,”content”:”Hello, ggb!”}</p>
+</blockquote>
+<p>现在我们开始此项目的正式编码：</p>
+<h3 id="1-创建一个名为hello的javabean"><a href="#1-创建一个名为hello的javabean" class="headerlink" title="1.创建一个名为hello的javabean"></a>1.创建一个名为hello的javabean</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">public class hello &#123;</span><br><span class="line">    private long id;</span><br><span class="line">    private String content;</span><br><span class="line"></span><br><span class="line">    public hello(long id, String content) &#123;</span><br><span class="line">        this.id = id;</span><br><span class="line">        this.content = content;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public long getId() &#123;</span><br><span class="line">        return id;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getContent() &#123;</span><br><span class="line">        return content;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>并实现其getter方法。</p>
+<h3 id="2-创建Controller"><a href="#2-创建Controller" class="headerlink" title="2.创建Controller"></a>2.创建Controller</h3><p>创建一个名为GreetingController的Java类如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@RestController</span><br><span class="line">public class GreetingController &#123;</span><br><span class="line">    private static final String template = &quot;Hello,%s!&quot;;</span><br><span class="line">    private final AtomicLong counter=new AtomicLong();</span><br><span class="line"></span><br><span class="line">    @RequestMapping(&quot;/greeting&quot;)</span><br><span class="line">    public com.ggb.dao.hello greeting(@RequestParam(value=&quot;name&quot;,defaultValue = &quot;World&quot;)String name)&#123;</span><br><span class="line">        return new hello(counter.incrementAndGet(),String.format(template,name));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中，注解 <em>@RestController</em>为Spring4里的新注解，它包含了 <em> </em>@Controller<em> 和 </em>@ResponseBody* 两个注解的功能。</p>
+<p><em>@ResqusetMapping</em> 同样表示映射地址为”/greeting”。</p>
+<p><em>@RequestParam</em> 将请求参数与方法参数进行绑定，并设置默认值为”World”。</p>
+<p>counter变量用于请求计数。如此便完成了Conroller的编码。</p>
+<h3 id="3-运行SpringBoot"><a href="#3-运行SpringBoot" class="headerlink" title="3.运行SpringBoot"></a>3.运行SpringBoot</h3><p>刚完成项目构建时，我们便发现了SpringBoot已经自动给我们生成了一个方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@SpringBootApplication</span><br><span class="line">public class Application &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        SpringApplication.run(Application.class, args);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中 <em>@SpringBootApplication</em> 注解囊括了一下所有功能：</p>
+<ol>
+<li><em>@Configuration</em> ，即声明为一个配置类</li>
+<li><em>@EnableAutoConfiguration</em> ，告诉SpringBoot自动配置加载其他Beans，和相关设定。</li>
+<li>类似于DispatcherServlet，此声明使得其拥有SpringMVC的拦截转发功能。</li>
+<li><em>@ConponentScan</em> 告诉Spring寻找其他组件，配置和服务在当前包下，并查找Controllers</li>
+</ol>
+<p>于此，通过一个注解我们便完成了之前我们所需配置的一系列xml等的工作。需要前两个Java类放在main的同一个包下。</p>
+<p>由于SpringBoot内置了tomcat容器，所以此时，只需要点击Application方法旁边的运行按钮，SpringBoot便可自动构建JAR文件，完成整个项目运行，并达到预期效果。当然，也可以通过传统方式，将整个项目打包成WAR文件再放置于第三方的容器运行。</p>
+<h2 id="三-总结"><a href="#三-总结" class="headerlink" title="三.总结"></a>三.总结</h2><p>当第一次接触到SpringBoot，我便被其所带来的巨大的便利性所深深吸引。在此之前，即使框架给我们带来了结构性的设计模式，和各个类之间的关系解耦。但是，从dao层到service层，再到controller每一层结构所需要的配置都是比较繁杂的。所以，当接触到SpringBoot，其带来的喜悦和兴奋感是难以言喻的，它的出现是真正改变游戏规则的那个。以后，我也一定会对其进行深入的学习和探究的。</p>
+<blockquote>
+<p>本文为ggb学习总结笔记和感想，若有不足或错误，欢迎指正交流</p>
+</blockquote>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' === 'true';
+    var verify = 'true' === 'true';
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "4Jjzw0n1LbKfHkNnBiOQGUXq-gzGzoHsz",
+        appKey: "dWAFf2EV7zEOIF3TRCe4exYN",
+        placeholder: "Say something~",
+        pageSize:'10',
+        avatar:'retro',
+        lang:'zh-cn',
+        guest_info: guest_info
+    });
+</script>
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/08/08/Spring-SpringMVC的基本流程/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
