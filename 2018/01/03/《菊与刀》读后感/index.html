@@ -53,7 +53,7 @@
     
     <title>
         
-            Spring_______SpringMVC的基本流程 | 
+            菊与刀 | 
         
         GGB&#39;s Blog
     </title>
@@ -63,8 +63,8 @@
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" itemprop="description" content="GGB&#39;Blog from 2018/8/6">
-    <meta name="keywords" content=",spring">
+    <meta name="description" itemprop="description" content="你觉得这是什么">
+    <meta name="keywords" content=",关于GGB">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -220,7 +220,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="GGB&#39;s Blog">
-    <meta name="msapplication-starturl" content="http://yoursite.com/2018/08/08/Spring-SpringMVC的基本流程/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/01/03/《菊与刀》读后感/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="GGB&#39;s Blog">
@@ -235,16 +235,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/2018/08/08/Spring-SpringMVC的基本流程/">
+    <meta property="og:url" content="http://yoursite.com/2018/01/03/《菊与刀》读后感/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Spring_______SpringMVC的基本流程 | GGB&#39;s Blog">
+    <meta property="og:title" content="菊与刀 | GGB&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="GGB&#39;Blog from 2018/8/6">
-    <meta property="og:article:tag" content="spring"> 
+    <meta property="og:description" content="你觉得这是什么">
+    <meta property="og:article:tag" content="关于GGB"> 
 
     
-        <meta property="article:published_time" content="Wed Aug 08 2018 20:03:05 GMT+0800">
-        <meta property="article:modified_time" content="Fri Aug 17 2018 15:35:42 GMT+0800">
+        <meta property="article:published_time" content="Wed Jan 03 2018 02:48:44 GMT+0800">
+        <meta property="article:modified_time" content="Wed Jan 09 2019 10:01:35 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -252,7 +252,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2018/08/08/Spring-SpringMVC的基本流程/index.html">
+        <link rel="canonical" href="http://yoursite.com/2018/01/03/《菊与刀》读后感/index.html">
     
 
     <!-- Structured-data for SEO -->
@@ -264,10 +264,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "http://yoursite.com/2018/08/08/Spring-SpringMVC的基本流程/index.html",
-    "headline": "Spring_______SpringMVC的基本流程",
-    "datePublished": "Wed Aug 08 2018 20:03:05 GMT+0800",
-    "dateModified": "Fri Aug 17 2018 15:35:42 GMT+0800",
+    "mainEntityOfPage": "http://yoursite.com/2018/01/03/《菊与刀》读后感/index.html",
+    "headline": "菊与刀",
+    "datePublished": "Wed Jan 03 2018 02:48:44 GMT+0800",
+    "dateModified": "Wed Jan 09 2019 10:01:35 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "GGB",
@@ -285,8 +285,8 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",spring",
-    "description": "GGB&#39;Blog from 2018/8/6",
+    "keywords": ",关于GGB",
+    "description": "你觉得这是什么",
 }
 </script>
 
@@ -345,14 +345,6 @@
     <!-- Left aligned menu below button -->
     
     
-    <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">format_list_numbered</i>
-    </button>
-
-    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#总述"><span class="post-toc-number">1.</span> <span class="post-toc-text">总述</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第一部分-web-xml"><span class="post-toc-number">2.</span> <span class="post-toc-text">第一部分 web.xml</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#第二部分-springmvc-config-xml"><span class="post-toc-number">3.</span> <span class="post-toc-text">第二部分 springmvc-config.xml</span></a></li></ol>
-    </ul>
-    
 
 
 
@@ -369,11 +361,20 @@
                 
     <!-- Paradox Post Header -->
     
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://s1.ax1x.com/2018/08/17/PWUWf1.png)">
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 20 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/cartoon/ct-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
     
             <p class="article-headline-p">
-                Spring_______SpringMVC的基本流程
+                菊与刀
             </p>
         </div>
 
@@ -392,7 +393,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>GGB</strong>
-        <span>8月 08, 2018</span>
+        <span>1月 03, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -416,7 +417,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/spring/">spring</a>
+        <a class="post_tag-link" href="/tags/关于GGB/">关于GGB</a>
     </li></ul>
     
 
@@ -431,7 +432,7 @@
     <!-- Leancloud Views -->
         <a class="post_share-link" href="#">
             <li class="mdl-menu__item">
-                <span id="/2018/08/08/Spring-SpringMVC的基本流程/" class="leancloud-views_num" data-flag-title="Spring_______SpringMVC的基本流程">
+                <span id="/2018/01/03/《菊与刀》读后感/" class="leancloud-views_num" data-flag-title="菊与刀">
      &nbsp;浏览量
 </span>
 
@@ -443,7 +444,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Spring_______SpringMVC的基本流程&url=http://yoursite.com/2018/08/08/Spring-SpringMVC的基本流程/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=菊与刀&url=http://yoursite.com/2018/01/03/《菊与刀》读后感/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -464,7 +465,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=GGB&#39;s Blog&title=Spring_______SpringMVC的基本流程&summary=GGB&#39;Blog from 2018/8/6&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/08/08/Spring-SpringMVC的基本流程/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=GGB&#39;s Blog&title=菊与刀&summary=GGB&#39;Blog from 2018/8/6&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/01/03/《菊与刀》读后感/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -483,76 +484,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><p>说到SpringMVC可以先看下面这张图：</p>
-<hr>
-<p><a href="https://imgchr.com/i/PWa7vV" target="_blank" rel="noopener"><img src="https://s1.ax1x.com/2018/08/17/PWa7vV.md.jpg" alt="PWa7vV.md.jpg"></a></p>
-<hr>
-<p>从这张图我们可以很清晰地看到SpringMVC作为Spring内嵌的MVC模块其整体的工作流程：</p>
-<ol>
-<li>用户向服务器发送请求，请求被Spring 的前端控制器DispatcherServlet截获。</li>
-<li>DispatherServlet对请求URL(统一资源定位符)进行解析，得到URI(请求资源标志符)，然后根据该uri，调用HandlerMapping获得该Handler配置的所有相关的对象。</li>
-<li>DispatcherServlet根据获得的Handler，选择一个合适的HandlerAdapter。</li>
-<li>提取请求中的模型数据，开始执行Handler(Controller)。期间Spring会自动帮你做一些工作：</li>
-</ol>
-<ul>
-<li>消息转换</li>
-<li>数据转换</li>
-<li>数据格式化</li>
-<li>数据验证</li>
-</ul>
-<ol start="5">
-<li>Handler执行完成后，向DispatcherServlet返回一个ModelAndView对象，ModelAndView对象中应该包含视图名或视图名和模型</li>
-<li>根据返回的ModelAndView对象，选择一个合适的ViewResolver（视图解析器）返回给DispatcherServlet.</li>
-<li>ViewResolver结合Model和View来渲染视图</li>
-<li>将视图结果返回客户端</li>
-</ol>
-<hr>
-<p>为了更清晰直观的描述其在程序中所发挥的作用，我觉得我们可以结合springMVC的配置文件说起：</p>
-<h1 id="第一部分-web-xml"><a href="#第一部分-web-xml" class="headerlink" title="第一部分 web.xml"></a>第一部分 web.xml</h1><p>作为一个JavaWeb项目，无论使用什么框架，其本质还是得归根到JSP,Servlet上来，而其根本的配置信息就是由web.xml所配置的。作为SpringMVC中的控制转发器DispatcherServlet其本质也是个负责拦截请求并转发的Servlet，所以使用SpringMVC的第一步便是在web.xml配置好DispatherServlet.看下面的代码(省略头文件)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">!-- 配置DispathcherServlet --&gt;</span><br><span class="line">    &lt;servlet&gt;</span><br><span class="line">        &lt;servlet-name&gt;springmvc&lt;/servlet-name&gt;</span><br><span class="line">        &lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt;</span><br><span class="line">       &lt;!--加载配置文件路径--&gt;</span><br><span class="line">        &lt;init-param&gt;</span><br><span class="line">            &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;</span><br><span class="line">            &lt;param-value&gt;classpath:spring/spring-*.xml&lt;/param-value&gt;</span><br><span class="line">        &lt;/init-param&gt;</span><br><span class="line">    &lt;/servlet&gt;</span><br><span class="line">    &lt;servlet-mapping&gt;</span><br><span class="line">        &lt;servlet-name&gt;springmvc&lt;/servlet-name&gt;</span><br><span class="line">        &lt;url-pattern&gt;/&lt;/url-pattern&gt;</span><br><span class="line">    &lt;/servlet-mapping&gt;</span><br></pre></td></tr></table></figure>
-<p>如上便配置好了DispatherServlet,当然其中还有对springMVC本身的配置文件，以及之后spring与DAO层，service层的spring配置文件的路径说明也必须要添加到<init-param>…</init-param>之中去。</p>
-<h1 id="第二部分-springmvc-config-xml"><a href="#第二部分-springmvc-config-xml" class="headerlink" title="第二部分 springmvc-config.xml"></a>第二部分 springmvc-config.xml</h1><p>这个文件配置的便是对springmvc的整体相关配置文件了，在 <em>SpringInAction</em> 一书中，作者推荐了采用java代码的方式对SpringMVC进行配置。</p>
-<p>但就目前所流行的开发模式中，依然是采用.xml配置文件使配置与逻辑业务分离，我个人也更喜欢.xml的配置方式，但是在有些情况下，需要对不同地方按不同逻辑进行选择配置时，这时Java配置才展现出它的优点。</p>
-<p>如下展示的是一个简单但可用的springmvc配置文件(文件名可以任取，只要在web.xml中配置好)，通过对其的解读，我们可见窥见一个完整的springmvc运作(头文件已省略)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 配置SpringMVC --&gt;</span><br><span class="line">    &lt;!-- 1：开启SpringMVC注解模式 --&gt;</span><br><span class="line">    &lt;!-- 简化配置：</span><br><span class="line">         （1）自动注册DefaultAnnotationHandlerMapping,AnnotationMethodHandlerAdapter</span><br><span class="line">         xml,json默认支持读写 --&gt;</span><br><span class="line">    &lt;mvc:annotation-driven/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 2:静态资源默认servlet配置</span><br><span class="line">         1）加入对静态资源的处理：js,gif,png</span><br><span class="line">         2) 允许使用&quot;/&quot;做整体映射</span><br><span class="line">         --&gt;</span><br><span class="line">    &lt;mvc:default-servlet-handler/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 3:配置jsp 显示ViewResolver --&gt;</span><br><span class="line">    &lt;bean class=&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;&gt;</span><br><span class="line">        &lt;property name=&quot;viewClass&quot; value=&quot;org.springframework.web.servlet.view.JstlView&quot;/&gt;</span><br><span class="line">        &lt;property name=&quot;prefix&quot; value=&quot;/WEB-INF/jsp/&quot;/&gt;</span><br><span class="line">        &lt;property name=&quot;suffix&quot; value=&quot;.jsp&quot;/&gt;</span><br><span class="line">    &lt;/bean&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 4.spring可以自动扫描base-package下面的包或子包的java文件，当扫描到spring相关的类时，可自动注册 --&gt;</span><br><span class="line">    &lt;context:component-scan base-package=&quot;controller&quot;/&gt;</span><br></pre></td></tr></table></figure>
-<ol>
-<li><a href="mvc:annotation-driven/" target="_blank" rel="noopener">mvc:annotation-driven/</a></li>
-</ol>
-<p>这条语句会自动注册RequestMappingHandlerMapping与RequestMappingHandlerAdapter两个Bean，这是SpringMVC为@COntrollers分发请求所必需的，并提供数据绑定支持，读写XML的支持(JAXB)和读写JSON的支持(默认Jackson)等功能。</p>
-<p>大部分情况我们使用默认的配置即可，但如果想要修改一些默认，如利用非Jackson处理json数据时，就需要在<a href="mvc:annotation-driven" target="_blank" rel="noopener">mvc:annotation-driven</a>标签中进行修改。</p>
-<ol start="2">
-<li><a href="mvc:default-servlet-handler/" target="_blank" rel="noopener">mvc:default-servlet-handler/</a></li>
-</ol>
-<p>该语句使用默认的Servlet来响应静态文件，因为在web.xml中使用了DispatcherServlet截获所有请求url,所以在请求引入静态文件，例如js的引用语句<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;js/ggb.js&quot;/&gt;</span><br></pre></td></tr></table></figure></p>
-<p>DispatherServlet会将”/“看成请求路径而报错。所以需要加上该语句进行配置。</p>
-<ol start="3">
-<li>ViewResolver的配置</li>
-</ol>
-<p>通过该项配置，当我们通过controller返回一个视图名时，会自动加上前缀prefix和后缀suffix，这样可以简化我们的代码编写。</p>
-<ol start="4">
-<li>&lt;context:component-scan base-package=”controller”/&gt;</li>
-</ol>
-<p>通过该语句，我们可以扫描到controller包下我们所写的controller组件，进而进行映射控制</p>
-<hr>
-<p>把每一个组件配置完成后，我们便可以开始使用springmvc进行业务逻辑控制，下面列举一个小例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@Controller</span><br><span class="line">public class HelloWorldContoller&#123;</span><br><span class="line">    @RequestMapping(&quot;/helloworld&quot;)</span><br><span class="line">    public String helloWorld(Model model)&#123;</span><br><span class="line">        model.addAttribute(&quot;message&quot;,&quot;HelloWorld!&quot;);</span><br><span class="line">        return &quot;hello&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这里便完成了一个极其简单的控制器实例了，首先我们通过@Contoller注解告诉spring这是一个控制器组件，之后的@RequestMapping(“/helloworld”)则声明以下方法用于处理url中的xxxx/helloworld请求，而计算机能识别此路径的前提，当然也是因为我们在web.xml中所声明的对’/‘的映射，以及springmvc.config中开启扫描后的结果。</p>
-<p>请求处理方法中可以带多种参数，而最重要的便是Model和ModelAndView参数了，在MVC框架中，控制器执行业务逻辑后产生模型数据(Model)，而视图(View)则用于渲染模型数据。</p>
-<p>在上例中，我们想model中加入了参数”HelloWorld!”，当其返回”hello”时，便会被自动解析为 ‘/WEB-INF/jsp/hello.jsp’ 这也是我们所配置的ViewResolver的功劳。这样，当我们在hello.jsp页面中通过EL表达式便可取到messge的值”HelloWorld!”输出到页面上了。</p>
-<p>此时再回顾我们开篇所给出的SpringMVC的流程图，通过这个么一个简单的例子，便实现了从拦截请求，控制器处理，数据模型建立，视图解析这一个整个MVC的过程！</p>
-<p>当然，要实现更加复杂的程序功能，还有很多SpringMVC注解如：</p>
-<ul>
-<li>@PathVariable 对请求的参数进行映射</li>
-<li>@CookieValue 处理请求中的Cookie值</li>
-<li>@RequestBody 自动将json数据参数传化为对应Pojo</li>
-<li>@Response 自动将结果pojo转化为json格式</li>
-<li>等等</li>
-</ul>
-<p>想了解更为详细的配置方法和注解使用，可以去阅读<a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#spring-web" target="_blank" rel="noopener">官方文档</a>，或者查看其他网络资源。</p>
-<blockquote>
-<p>本文为GGB学习过程中的笔记总结，欢迎各位的指正和交流。</p>
-</blockquote>
-
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <div id="hbe-security"> <div class="input-container"> <input type="password" class="form-control" id="pass" placeholder=" 你觉得密码是什么？ "> <label for="pass"> 你觉得密码是什么？ </label> <div class="bottom-line"></div> </div> </div> <div id="encrypt-blog" style="display:none"> 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 </div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
         
     
 
@@ -597,7 +529,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/08/13/开启SpringBoot的新世界/" id="post_nav-newer" class="prev-content">
+        <a href="/2018/01/03/《乌合之众》读后感/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -610,14 +542,6 @@
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
-    
-        <a href="/2018/08/07/README/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
     
 </nav>
 
